@@ -195,3 +195,9 @@ body {min-width:280px}
 
 /* Guard against unusually long headings in narrow devices */
 .page-h1,.section-title{overflow-wrap:break-word}
+
+
+/* VEYNOV R1 approved outlined identity, minimum visual integration */
+.brand-wordmark-img{display:block;width:147px;height:auto;max-width:100%}
+.site-footer .brand-wordmark-img{width:159px}
+@media(max-width:760px){.brand-wordmark-img{width:128px}}
