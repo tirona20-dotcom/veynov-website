@@ -279,7 +279,7 @@ body {min-width:280px}
 .contact-inner{padding-top:45px;padding-bottom:49px}
 .contact h2{font-size:clamp(28px,2.6vw,36px);letter-spacing:-.045em;line-height:1.16}
 .cta-grid h2{font-size:clamp(28px,2.6vw,36px);letter-spacing:-.045em;line-height:1.16}
-.cta-strip .cta-grid{padding-top:50px;padding-bottom:54px}
+.cta-strip .cta-grid{padding-top:0;padding-bottom:0}
 .intro-copy{font-size:clamp(18px,1.65vw,23px);line-height:1.4;letter-spacing:-.025em}
 @media(max-width:760px){
  .hero{padding-top:38px;padding-bottom:38px}
@@ -399,3 +399,28 @@ body {min-width:280px}
   .visual-canvas{height:clamp(242px,69vw,275px)}
   .visual-canvas svg{inset:3%;width:94%;height:94%}
 }
+
+/* Independent private candidate: focused editorial composition, original palette. */
+.cta-strip{padding:45px 0 49px}
+.cta-strip .cta-grid{padding-top:0;padding-bottom:0}
+.solution-card > div > p{max-width:65ch}
+.about-page .subhero{padding-bottom:48px}
+.about-page .lead{max-width:65ch}
+.about-row{display:grid;grid-template-columns:minmax(170px,.75fr) minmax(0,2fr);gap:clamp(30px,5vw,72px);border-top:1px solid var(--rule);padding:48px 0 52px;align-items:start}
+.about-row>.section-no{padding-top:6px}
+.about-body{max-width:65ch}
+.about-body p{font-size:16px;line-height:1.65;color:var(--muted);margin-top:20px;max-width:65ch}
+.about-philosophy{font-family:Georgia,'Times New Roman',serif;font-size:clamp(26px,2.25vw,32px);font-weight:400;line-height:1.3;letter-spacing:-.025em;max-width:36ch}
+.about-body .section-title{margin:0;font-size:clamp(27px,2.25vw,32px);line-height:1.2}
+.about-links{display:flex;gap:28px;flex-wrap:wrap;margin-top:18px}
+@media(max-width:760px){
+ .cta-strip{padding:36px 0 39px}
+ .about-page .subhero{padding-bottom:33px}
+ .about-row{display:block;padding:30px 0 34px}
+ .about-row>.section-no{display:block;padding-top:0;margin-bottom:18px}
+ .about-body .section-title{font-size:27px}
+ .about-body p{margin-top:17px}
+ .about-links{gap:12px 24px;margin-top:14px}
+}
+.site-footer a:focus-visible{outline-color:var(--paper)}
+.contact-note{color:var(--muted)}
