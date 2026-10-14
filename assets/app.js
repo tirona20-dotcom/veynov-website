@@ -17,5 +17,6 @@
  nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setOpen(false)));
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open'))setOpen(false,true)});
  document.addEventListener('click',event=>{if(nav.classList.contains('open')&&!nav.contains(event.target)&&!toggle.contains(event.target))setOpen(false)});
+ document.addEventListener('focusin',event=>{if(nav.classList.contains('open')&&!nav.contains(event.target)&&!toggle.contains(event.target))setOpen(false)});
  window.addEventListener('resize',()=>{if(window.innerWidth>760&&nav.classList.contains('open'))setOpen(false)});
 })();
