@@ -94,6 +94,11 @@ main:focus{outline:none}
 .focus-item h3 a:focus-visible{outline-width:2px;outline-offset:5px}
 .focus-item p{max-width:330px;margin-top:16px;color:var(--muted);font-size:15px;line-height:1.55}
 .focus-note{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;line-height:1.55}
+/* Clearly labelled product access; no implied public availability. */
+.product-entry{display:flex;align-items:center;flex-wrap:wrap;gap:5px 16px;margin-top:11px}
+.product-entry a{display:inline-flex;align-items:center;gap:9px;min-height:40px;border-bottom:1px solid var(--link-rule);font-size:13px;font-weight:700;line-height:1.4}
+.product-entry a:hover{color:var(--blue)}
+.product-stage{color:var(--muted);font-size:11px;line-height:1.4}
 
 /* Inner pages: introduction */
 .subhero{padding-top:56px;padding-bottom:42px}
@@ -121,6 +126,7 @@ main:focus{outline:none}
 .solution-card{display:grid;grid-template-columns:70px minmax(0,1fr);gap:27px;align-items:start;padding:29px 0 31px;border-bottom:1px solid var(--list-rule)}
 .solution-num{color:var(--blue);font-size:11px;font-weight:750;letter-spacing:.14em}
 .solution-card h2{max-width:780px;font-size:clamp(27px,2.7vw,39px);font-weight:550;line-height:1.14;letter-spacing:-.039em}
+.solution-card h2 a:hover{text-decoration:underline;text-underline-offset:5px}
 .solution-card p{max-width:65ch;margin-top:13px;color:var(--muted);font-size:15px;line-height:1.58}
 .solution-card .boundary{margin-top:10px;color:var(--ink);font-size:14px;line-height:1.55}
 
