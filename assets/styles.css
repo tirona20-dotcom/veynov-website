@@ -263,3 +263,60 @@ main:focus{outline:none}
   .footer-tagline,.footer-links a,.footer-bottom{color:#000}
   .hero-visual{break-inside:avoid}
 }
+
+/* VEYNOV Admin public pilot: a restrained editorial product showcase. */
+.admin-feature{background:#e8ecea;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.admin-feature-inner{display:grid;grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);align-items:center;gap:clamp(32px,5.2vw,78px);padding-top:65px;padding-bottom:66px}
+.admin-feature-copy h2{margin-top:20px;font-size:clamp(36px,3.7vw,54px);font-weight:570;letter-spacing:-.055em;line-height:1.08}
+.admin-feature-copy h2 em{font-family:var(--serif);font-weight:400}
+.admin-feature-lead{max-width:420px;margin-top:20px;font-size:clamp(21px,2vw,28px);line-height:1.28;letter-spacing:-.033em}
+.admin-feature-text{max-width:470px;margin-top:18px;color:var(--muted);font-size:15px;line-height:1.66}
+.admin-feature-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 25px;margin-top:28px}
+.admin-feature-meta{margin-top:22px;color:#55636c;font-size:12px;line-height:1.65}
+.admin-preview{margin:0;min-width:0;padding:9px;background:#f8f8f5;border:1px solid #bdcacb;box-shadow:0 18px 45px #17233012}
+.admin-preview a{display:block;overflow:hidden;border:1px solid #d5dbd7}
+.admin-preview img{display:block;width:100%;height:auto}
+.admin-preview figcaption,.admin-page-image figcaption{padding:10px 8px 3px;color:var(--muted);font-size:11px;line-height:1.4}
+.property-products{margin-top:23px;border-top:1px solid var(--line)}
+.property-product{display:flex;justify-content:space-between;align-items:center;gap:16px 35px;padding:21px 0;border-bottom:1px solid var(--line)}
+.property-product h3{font-size:17px;font-weight:650;letter-spacing:-.02em}
+.property-product h3 a:hover{text-decoration:underline;text-underline-offset:4px}
+.solution-card .property-product p{margin-top:6px;font-size:13px;line-height:1.5}
+.property-product>a{display:inline-flex;gap:10px;align-items:center;flex-shrink:0;min-height:44px;border-bottom:1px solid var(--link-rule);font-size:13px;font-weight:700}
+.property-product>a:hover{color:var(--blue)}
+.admin-page-hero{padding-top:56px;padding-bottom:44px}
+.admin-page-deck{margin-top:17px;max-width:730px;font-size:clamp(23px,2.1vw,31px);line-height:1.28;letter-spacing:-.035em}
+.admin-page-hero .lead{margin-top:17px}
+.admin-page-showcase{padding-top:0;padding-bottom:39px}
+.admin-page-image{margin:0;padding:10px;border:1px solid var(--rule);background:#fff}
+.admin-page-image img{display:block;width:100%;height:auto;border:1px solid #dce0de}
+.admin-page-detail{padding-top:25px;padding-bottom:77px}
+.admin-detail-heading .section-title{margin-top:18px}
+.admin-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:25px;border-top:1px solid var(--line)}
+.admin-detail-grid article{padding:26px 30px 22px 0;border-right:1px solid var(--line)}
+.admin-detail-grid article+article{padding-left:30px}
+.admin-detail-grid article:last-child{border-right:0}
+.admin-detail-grid h3{margin-top:17px;font-size:clamp(19px,1.7vw,23px);line-height:1.23;letter-spacing:-.028em}
+.admin-detail-grid p{margin-top:13px;color:var(--muted);font-size:15px;line-height:1.62}
+.admin-page-limit{max-width:890px;margin-top:19px;padding-top:22px;border-top:1px solid var(--rule);color:var(--muted);font-size:13px;line-height:1.65}
+@media(max-width:900px){
+  .admin-feature-inner{grid-template-columns:1fr;gap:30px;padding-top:50px;padding-bottom:48px}
+  .admin-feature-copy{max-width:710px}
+}
+@media(max-width:760px){
+  .admin-feature-inner{padding-top:39px;padding-bottom:39px}
+  .admin-feature-copy h2{font-size:39px}
+  .admin-feature-lead{font-size:23px}
+  .admin-feature-actions{gap:8px 23px}
+  .admin-feature-meta{font-size:11px}
+  .admin-preview{padding:5px}
+  .property-product{align-items:flex-start;flex-direction:column;gap:9px;padding:18px 0}
+  .property-product>a{min-height:38px}
+  .admin-page-hero{padding-top:42px;padding-bottom:29px}
+  .admin-page-deck{font-size:24px}
+  .admin-page-showcase{padding-bottom:21px}
+  .admin-page-image{padding:5px}
+  .admin-page-detail{padding-top:20px;padding-bottom:44px}
+  .admin-detail-grid{display:block;margin-top:20px}
+  .admin-detail-grid article,.admin-detail-grid article+article{padding:23px 0 26px;border-right:0;border-bottom:1px solid var(--line)}
+}
